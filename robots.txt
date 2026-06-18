@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.gwanak-barogo.example.com/sitemap.xml
+Sitemap: https://gwanak-massage1.pages.dev/sitemap.xml

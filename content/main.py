@@ -220,13 +220,16 @@ _BODY = f"""
 </section>
 """
 
+# 네이버 서치어드바이저 사이트 등록 인증 메타 (메인페이지)
+_NAVER = '<meta name="naver-site-verification" content="df7dcfd5ec01190e2ca77440bc105c66c1871984" />\n'
+
 PAGE = {
     "path": "",
     "title": "관악 출장마사지｜관악구 홈타이 지역별 예약 안내",
     "desc": "관악 출장마사지·홈타이 예약 전 행정동, 역세권, 이용 기준을 정리했습니다.",
     "h1": "관악 출장마사지 · 관악구 홈타이 지역별 예약 안내",
     "body": _BODY,
-    "extra_head": _JSONLD,
+    "extra_head": _NAVER + _JSONLD,
     "breadcrumb": [],
     "hero": _HERO,
 }
