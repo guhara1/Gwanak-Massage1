@@ -7,6 +7,10 @@ BRAND_MARK = "GO"          # 헤더 로고 원형 마크 글자
 PHONE = "0508-202-4719"
 PHONE_DISPLAY = "0508-202-4719"
 
+# IndexNow 키 — 빙·네이버·얀덱스 즉시 색인 통보용.
+# 빌드 시 사이트 루트에 {INDEXNOW_KEY}.txt 파일이 생성된다.
+INDEXNOW_KEY = "29893602185f41aba41446c87bd7e98e"
+
 REGION = "관악구"           # 행정구역명
 REGION_SHORT = "관악"        # 키워드 축약형
 REGION_FULL = "서울특별시 관악구"

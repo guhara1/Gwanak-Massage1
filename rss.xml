@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>바로GO 매거진</title>
+    <link>https://gwanak-massage1.pages.dev/magazine/</link>
+    <atom:link href="https://gwanak-massage1.pages.dev/rss.xml" rel="self" type="application/rss+xml"/>
+    <description>관악구 출장마사지·홈타이 — 마사지·휴식·컨디션 관리 가이드</description>
+    <language>ko-KR</language>
+    <lastBuildDate>Thu, 18 Jun 2026 12:41:03 +0900</lastBuildDate>
+    <item>
+      <title>스웨디시 vs 타이마사지 차이 비교 | 나에게 맞는 마사지 고르기</title>
+      <link>https://gwanak-massage1.pages.dev/magazine/swedish-vs-thai/</link>
+      <guid isPermaLink="true">https://gwanak-massage1.pages.dev/magazine/swedish-vs-thai/</guid>
+      <description>스웨디시와 타이마사지의 차이를 압·복장·샤워·받은 후 느낌·목적 다섯 가지 기준으로 비교했습니다. 처음 받는 분을 위한 선택 가이드.</description>
+      <pubDate>Mon, 08 Jun 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>출장마사지 처음 이용 가이드 | 자주 묻는 질문 10가지 솔직 답변</title>
+      <link>https://gwanak-massage1.pages.dev/magazine/first-time-guide/</link>
+      <guid isPermaLink="true">https://gwanak-massage1.pages.dev/magazine/first-time-guide/</guid>
+      <description>출장마사지가 처음인 분들이 예약 전화에서 실제로 묻는 질문 10가지를 골라 답했습니다. 준비물, 공간, 복장, 안전, 결제까지 솔직한 가이드.</description>
+      <pubDate>Fri, 05 Jun 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>수면의 질과 마사지 | 자기 전 마사지가 잠을 바꾸는 원리</title>
+      <link>https://gwanak-massage1.pages.dev/magazine/sleep-and-massage/</link>
+      <guid isPermaLink="true">https://gwanak-massage1.pages.dev/magazine/sleep-and-massage/</guid>
+      <description>마사지가 수면의 질을 높이는 생리학적 원리와, 자기 전 받는 저녁 관리를 설계하는 법을 정리했습니다. 불면이 길어진 분을 위한 현실적인 가이드.</description>
+      <pubDate>Mon, 01 Jun 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>운동 후 마사지 타이밍 | 직후·당일 저녁·다음 날의 차이</title>
+      <link>https://gwanak-massage1.pages.dev/magazine/post-workout-timing/</link>
+      <guid isPermaLink="true">https://gwanak-massage1.pages.dev/magazine/post-workout-timing/</guid>
+      <description>운동 직후, 당일 저녁, 다음 날 중 언제 마사지를 받아야 회복 효과가 가장 큰지 정리했습니다. 러닝·웨이트·골프 등 종목별 회복 포인트 포함.</description>
+      <pubDate>Wed, 27 May 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>어깨·목 결림 없애는 법 | 원인·셀프 관리 한계·전문 관리 기준</title>
+      <link>https://gwanak-massage1.pages.dev/magazine/neck-shoulder-care/</link>
+      <guid isPermaLink="true">https://gwanak-massage1.pages.dev/magazine/neck-shoulder-care/</guid>
+      <description>모니터와 스마트폰이 만든 어깨·목 결림의 진짜 원인과, 셀프 스트레칭의 한계, 전문 관리가 필요한 신호를 정리했습니다. 자세 습관 가이드 포함.</description>
+      <pubDate>Fri, 22 May 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>부모님 마사지 선물 가이드 | 대리 예약 방법과 체크리스트</title>
+      <link>https://gwanak-massage1.pages.dev/magazine/parents-gift/</link>
+      <guid isPermaLink="true">https://gwanak-massage1.pages.dev/magazine/parents-gift/</guid>
+      <description>부모님께 방문 마사지를 선물할 때 자녀가 챙겨야 할 것들을 정리했습니다. 어르신 관리의 차이점, 대리 예약 절차, 건강 상태 확인 체크리스트.</description>
+      <pubDate>Mon, 18 May 2026 09:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>

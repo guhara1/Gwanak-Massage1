@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://gwanak-massage1.pages.dev/sitemap.xml
+Sitemap: https://gwanak-massage1.pages.dev/rss.xml
