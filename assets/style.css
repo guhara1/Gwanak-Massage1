@@ -545,12 +545,24 @@ th { background: var(--panel-2); color: var(--gold-soft); font-family: var(--ser
 }
 .footer-copy { font-size: 0.78rem; opacity: 0.75; margin: 0; }
 .footer-note { font-size: 0.76rem; opacity: 0.55; margin: 0; }
-.footer-made {
-  font-size: 0.76rem; color: var(--text-dim);
-  border: 1px solid var(--line); border-radius: 16px;
-  padding: 4px 14px; white-space: nowrap; transition: 0.15s;
+/* 푸터 텔레그램 문의 버튼 — 오렌지 */
+.footer-tg { display: flex; gap: 10px; flex-wrap: wrap; }
+.tg-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.02em;
+  color: #fff; white-space: nowrap;
+  background: linear-gradient(135deg, #ff9a3c 0%, #ff7a18 55%, #f25c05 100%);
+  border: 1px solid rgba(255, 154, 60, 0.5); border-radius: 18px;
+  padding: 8px 18px; transition: 0.15s;
+  box-shadow: 0 6px 18px rgba(242, 92, 5, 0.28),
+              inset 0 1px 0 rgba(255, 240, 220, 0.4);
 }
-.footer-made:hover { color: var(--gold-soft); border-color: var(--line-gold); }
+.tg-btn svg { width: 15px; height: 15px; fill: #fff; flex-shrink: 0; }
+.tg-btn:hover {
+  color: #fff; filter: brightness(1.06); transform: translateY(-1px);
+  box-shadow: 0 9px 24px rgba(242, 92, 5, 0.4),
+              inset 0 1px 0 rgba(255, 240, 220, 0.5);
+}
 
 @media (max-width: 920px) {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; padding-top: 36px; }
