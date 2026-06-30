@@ -221,7 +221,7 @@ _BODY = f"""
 """
 
 # 네이버 서치어드바이저 사이트 등록 인증 메타 (메인페이지)
-_NAVER = '<meta name="naver-site-verification" content="df7dcfd5ec01190e2ca77440bc105c66c1871984" />\n'
+_NAVER = '<meta name="naver-site-verification" content="9766e575c7cc0a770ade776bfa7188928091323d" />\n'
 
 PAGE = {
     "path": "",

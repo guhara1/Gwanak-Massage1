@@ -1,5 +1,14 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gwanak-massage1.pages.dev/sitemap.xml
-Sitemap: https://gwanak-massage1.pages.dev/rss.xml
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://gwanak-massage1.netlify.app/sitemap.xml
+Sitemap: https://gwanak-massage1.netlify.app/rss.xml

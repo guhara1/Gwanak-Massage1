@@ -46,8 +46,21 @@ python3 build.py
 - 상단/하위 메뉴와 푸터에 키워드·지역명·역명 대량 나열 없음
 - 모든 페이지 본문은 페이지별 고유 작성 (지역명만 바꾼 복붙 없음 = scaled content abuse 회피)
 
-## 배포 전 해야 할 일
+## 배포 (Netlify)
 
-1. `content/site.py`의 `BASE_URL`을 실제 도메인으로 변경
-2. `python3 build.py` 재실행 (canonical·sitemap·robots.txt에 반영됨)
-3. Google Search Console에 `sitemap.xml` 제출
+- 배포 도메인: **https://gwanak-massage1.netlify.app** (`content/site.py`의 `BASE_URL`)
+- `netlify.toml`이 퍼블리시 루트(`.`)·캐싱·보안 헤더·www 정규화를 설정한다
+- 저장소 루트가 곧 사이트이므로 별도 빌드 명령 없이 그대로 서빙된다
+
+도메인·디렉터리 구조를 바꾸면 `BASE_URL` 수정 후 `python3 build.py`를 재실행해야
+canonical·sitemap·robots·OG·JSON-LD에 반영된다.
+
+## 색인(인덱싱) 가속
+
+- `sitemap.xml`: lastmod·changefreq·priority 포함 (메인 1.0, 허브 0.9, 상세 0.7~0.8)
+- `rss.xml`: 매거진 신규 글 피드 (네이버·구글·빙 신규 글 발견 가속)
+- `robots.txt`: 전체 허용 + 네이버(Yeti)·Googlebot·Bingbot 명시 + 두 사이트맵 안내
+- 네이버 서치어드바이저: 메인 `naver-site-verification` 메타 반영됨 → 사이트 등록 후 `sitemap.xml`·`rss.xml` 제출
+- 구글 서치 콘솔: 도메인 등록 후 `sitemap.xml` 제출
+- IndexNow: 루트의 `{INDEXNOW_KEY}.txt`로 빙·네이버·얀덱스 즉시 색인 통보 가능
+- 스키마: 전 페이지 Service·Offer·AggregateRating(이용 후기 평점), 후기 페이지 Review 배열 — 표시된 후기와 일치하도록 `content/reviews_data.py` 단일 출처에서 생성
