@@ -1,0 +1,45 @@
+# Netlify 배포 설정 — 사전 빌드된 정적 사이트(저장소 루트가 곧 퍼블리시 디렉터리)
+[build]
+  publish = "."
+  command = ""
+
+# 정적 자산 장기 캐싱(파일명 변경 시 무효화) — 첫 방문 후 재방문·색인 봇 응답 속도 향상
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML은 항상 최신 확인(색인 신선도 유지)
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# 색인 봇이 즉시 읽도록 sitemap·robots·rss는 캐시 짧게
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+[[headers]]
+  for = "/rss.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# 기본 보안 헤더
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# 정식 호스트 정규화(www → 기본 도메인)로 canonical 신호 일원화
+[[redirects]]
+  from = "https://www.gwanak-massage1.netlify.app/*"
+  to = "https://gwanak-massage1.netlify.app/:splat"
+  status = 301
+  force = true

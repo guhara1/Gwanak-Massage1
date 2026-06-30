@@ -758,3 +758,65 @@ body { letter-spacing: -0.003em; }
   content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px;
   background: linear-gradient(90deg, transparent, var(--line-gold), transparent);
 }
+
+/* ── 내부 링크 강화: 링크 클라우드(메인 지역 인덱스·관련 안내) ── */
+#area-index h3 {
+  font-size: 1.04rem; color: var(--gold-soft);
+  margin: 26px 0 10px; padding-left: 12px;
+  border-left: 3px solid var(--gold);
+}
+.link-cloud {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  list-style: none; margin: 12px 0 6px; padding: 0;
+}
+.link-cloud li { margin: 0; }
+.link-cloud a {
+  display: inline-block; padding: 8px 14px;
+  background: var(--panel-2); border: 1px solid var(--line);
+  border-radius: 999px; color: var(--text-dim);
+  font-size: 0.86rem; letter-spacing: 0.01em; transition: 0.16s;
+}
+.link-cloud a:hover {
+  border-color: var(--gold); color: var(--gold-soft);
+  background: linear-gradient(180deg, #13203a, var(--panel-2));
+  transform: translateY(-2px);
+}
+
+/* 주변 지역·관련 안내 블록 */
+.related-areas {
+  margin-top: 30px; padding: 22px 24px;
+  background: var(--panel-2);
+  border: 1px solid var(--line-gold); border-radius: 14px;
+}
+.related-areas h2 { margin-top: 0; }
+
+/* ── 이용 후기 ── */
+.review-summary {
+  display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;
+  padding: 16px 20px; margin: 14px 0 22px;
+  background: linear-gradient(135deg, #131f38, var(--panel-2));
+  border: 1px solid var(--line-gold); border-radius: 14px;
+}
+.review-avg {
+  font-size: 2.4rem; font-weight: 800; line-height: 1;
+  color: var(--gold-soft);
+}
+.review-avg-stars { color: var(--gold); letter-spacing: 2px; font-size: 1.1rem; }
+.review-count { color: var(--text-dim); font-size: 0.9rem; }
+.review-list { list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.review-card {
+  margin: 0; padding: 18px 20px;
+  background: var(--panel-2); border: 1px solid var(--line);
+  border-radius: 14px; transition: 0.18s;
+}
+.review-card:hover { border-color: var(--line-gold); transform: translateY(-2px); }
+.review-head {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 10px; margin-bottom: 4px;
+}
+.review-author { font-weight: 700; color: var(--text); font-size: 0.95rem; }
+.review-stars { color: var(--gold); letter-spacing: 1px; font-size: 0.92rem; }
+.review-meta { color: var(--text-dim); font-size: 0.8rem; margin: 0 0 10px; }
+.review-body { margin: 0; line-height: 1.85; font-size: 0.92rem; }
